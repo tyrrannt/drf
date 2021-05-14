@@ -19,7 +19,7 @@ from rest_framework.routers import DefaultRouter
 from usersapp.views import CustomUserModelViewSet
 
 router = DefaultRouter()
-router.register('userapp', CustomUserModelViewSet)
+router.register('usersapp', CustomUserModelViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
