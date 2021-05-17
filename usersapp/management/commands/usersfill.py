@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.contrib.auth import get_user_model
+from django.contrib.auth.models import AbstractUser
 from usersapp.models import CustomUser
 import json
 import os
@@ -17,7 +18,7 @@ class Command(BaseCommand):
         if options['super']:
             super_user = get_user_model()
             try:
-                super_user.objects.create_superuser('admin', 'admin@localhost', 'admin')
+                super_user.objects.create_superuser('admin', 'admin@localhost', '12345')
                 print("Суперпользователь успешно создан.")
             except Exception as e:
                 print(f"Ошибка: {e} при создании суперпользователя")

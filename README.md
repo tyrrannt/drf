@@ -1,8 +1,10 @@
 # drf
+python manage.py makemigrations
+python manage.py migrate
 
 Логин суперпользователя: admin
-Пароль: admin
+Пароль: 12345
 
 Management command:
-python manage.py usersapp -s #создание суперпользователя
-python manage.py usersapp -u #заполнение базы пользователей
+python manage.py usersfill -s #создание суперпользователя
+python manage.py usersfill -u #заполнение базы пользователей
