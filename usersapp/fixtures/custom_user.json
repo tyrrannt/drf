@@ -1,0 +1,1 @@
+[{"model": "usersapp.customuser", "pk": 1, "fields": {"username": "tyrrannt", "first_name": "Виталий", "last_name": "Шакиров", "surname": "Рустамович", "email": "vitaliy@localhost"}}, {"model": "usersapp.customuser", "pk": 2, "fields": {"username": "galina", "first_name": "Галина", "last_name": "Красильникова", "surname": "Сергеевна", "email": "galina@localhost"}}]
